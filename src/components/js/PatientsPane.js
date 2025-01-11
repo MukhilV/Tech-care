@@ -1,12 +1,27 @@
 import React from "react";
+import PatientBasicInfoTile from "./PatientBasicInfoTile";
 
-const PatientsPane = () => (
-  <div className="patients-pane">
-    <div className="patient">Patient 1</div>
-    <div className="patient">Patient 2</div>
-    <div className="patient">Patient 3</div>
-    {/* Add more patients as needed */}
-  </div>
-);
+function PatientsPane({ data }) {
+  const basicInfo = data.map((obj) => {
+    return [obj.profile_picture, obj.name, obj.gender, obj.age];
+  });
+  console.log(basicInfo);
+  return (
+    <div className="patients-pane">
+      <div className="patients-pane-heading"> Patients </div>
+      {basicInfo.map((patient, index) => {
+        return (
+          <PatientBasicInfoTile
+            profile_picture={patient[0]}
+            name={patient[1]}
+            gender={patient[2]}
+            age={patient[3]}
+            key={index}
+          />
+        );
+      })}
+    </div>
+  );
+}
 
 export default PatientsPane;

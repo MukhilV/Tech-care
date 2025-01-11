@@ -1,0 +1,43 @@
+/* Left Patients Pane */
+.patients-pane {
+  width: 20%;
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.patient {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Right Patient Details Pane */
+.patient-details-pane {
+  width: 30%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-left: 1px solid #ddd;
+}
+
+.patient-photo {
+  height: 150px;
+  width: 150px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.photo {
+  height: 150pxs;
+}
+
+.patient-info {
+  margin-top: 20px;
+  text-align: center;
+}
+

@@ -1,0 +1,20 @@
+.tile-outer-container {
+  display: flex;
+  padding: 10px;
+}
+
+.tile-inner-container-left {
+  width: 25%;
+}
+
+.tile-inner-container-right {
+  width: 65%;
+}
+
+.tile-inner-container-right-heading {
+  text-decoration: double;
+}
+
+.tile-inner-container-right-content {
+  text-align: center;
+}
