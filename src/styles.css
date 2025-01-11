@@ -128,14 +128,24 @@
 }
 
 .diagnostic-graph {
-  height: 200px;
-  background-color: #ffffff;
+  height: auto;
+  background-color: #f4f0fe;
   border: 1px solid #ddd;
   border-radius: 5px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+.diagonsis-left-pane {
+  height: 40vh;
+  width: 70%;
+}
+
+.diagonsis-right-pane {
+  height: 40vh;
+  width: 30%;
 }
 
 .diagnostic-stats {
