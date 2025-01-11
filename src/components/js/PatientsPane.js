@@ -5,7 +5,7 @@ function PatientsPane({ data }) {
   const basicInfo = data.map((obj) => {
     return [obj.profile_picture, obj.name, obj.gender, obj.age];
   });
-  console.log(basicInfo);
+  // console.log(basicInfo);
   return (
     <div className="patients-pane">
       <div className="patients-pane-heading"> Patients </div>
